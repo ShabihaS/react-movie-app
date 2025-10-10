@@ -7,7 +7,7 @@ const PROJECT_ID = import.meta.env.VITE_APPWRITE_PROJECT_ID;
 
 const client=new Client()
 .setEndpoint('https://syd.cloud.appwrite.io/v1') // Your Appwrite Endpoint
-.setProject(PROJECT_ID); // Your project ID
+.setProject(PROJECT_ID); // Project ID
 
 const databases = new Databases(client);
 
@@ -63,3 +63,6 @@ export const getTrendingMovies=async()=>{
     }
 
 }
+
+
+
